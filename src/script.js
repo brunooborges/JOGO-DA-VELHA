@@ -28,14 +28,6 @@ turn.innerHTML = player;
 xScore.innerHTML = xCounter;
 oScore.innerHTML = oCounter;
 
-// Events
-
-document.querySelector('.reset-game').addEventListener('click', resetGame);
-document.querySelector('.reset-score').addEventListener('click', resetScore);
-document.querySelectorAll('.item').forEach((item) => {
-  item.addEventListener('click', handleItemClick);
-});
-
 // Functions
 
 function handleItemClick(event) {
@@ -138,3 +130,11 @@ function resetScore() {
 
   resetGame();
 }
+
+// Events
+
+document.querySelector('.reset-game').addEventListener('click', resetGame);
+document.querySelector('.reset-score').addEventListener('click', resetScore);
+document.querySelectorAll('.item').forEach((item) => {
+  item.addEventListener('click', handleItemClick);
+});
